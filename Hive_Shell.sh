@@ -50,7 +50,8 @@ echo "$filename" #txns_20210101_PADE
 
 #identify date from $filename "txns_20210101_PADE"----20210101---format----2020-10-07
 dt=`echo $filename | awk -F'_' '{print $2}'`
-dtfmt=`date -d $dt + '%Y-%m-%d'` ----format as per business standard
+dtfmt=`date -d $dt + '%Y-%m-%d'` 
+#----format as per business standard
 echo $dtfmt
 
 reg=`echo $filename | awk -F'_' '{print $3}'`
